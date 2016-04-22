@@ -29,13 +29,13 @@ Install dependecies with:
 $ npm install
 ```
 
-Use the developer github client information with: 
+Use the developer github client information with:
 ```
 $ export GITHUB_CLIENT_ID=0a363c03ec2646619f57
 $ export GITHUB_CLIENT_SECRET=01408892458c92e3514cd96cd6b31e6d91df25d2
 $ export SESSION_SECRET=testSessionSecret
 ```
-Alternatively, you can setup your own credentials [here](https://github.com/settings/applications/new). 
+Alternatively, you can setup your own credentials [here](https://github.com/settings/applications/new).
 
 Run locally with:
 ```
@@ -43,6 +43,13 @@ $ npm start
 ```
 
 And visit [http://localhost:3000/](http://localhost:3000/)
+
+## Install
+Host your own version of the dashbaord on Heroku using the Heroku button.
+
+In order to deploy to Heroku you will need an Auth0 Account.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fauth0%2Fchecklistomania)
 
 For 18Fers: this is deployed on cloud.gov. Get started on cloud.gov by following the instructions [here](https://docs.cloud.gov/). Ask for more details in #checklistomania channel in slack.
 

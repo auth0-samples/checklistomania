@@ -1,0 +1,33 @@
+
+{
+  "name": "Checklistomania",
+  "description": "Centrally managed todo lists for complex processes - onboarding, offboarding, management changes, etc.",
+  "logo": "https://cloudup.com/cJPd33l_Stj+",
+  "repository": "https://github.com/auth0-samples/checklistomania",
+  "keywords": [
+    "auth0",
+    "node"
+  ],
+  "addons": [
+    "mongolab:sandbox"
+  ],
+  "env": {
+    "AUTH0_CLIENT_ID": {
+      "description": "The Auth0 client ID.",
+      "required": true
+    },
+    "AUTH0_CLIENT_SECRET": {
+      "description": "The Auth0 client secret.",
+      "required": true
+    },
+    "AUTH0_DOMAIN": {
+      "description": "The Auth0 domain",
+      "required": true,
+      "value": "youraccount.auth0.com"
+    },
+    "CALLBACK_URL": {
+      "description": "The authentication callback url",
+      "required": true
+    }
+  }
+}
