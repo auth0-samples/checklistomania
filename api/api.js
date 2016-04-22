@@ -8,8 +8,8 @@ var url;
 if(process.env.VCAP_SERVICES) {
 	vcapServices = JSON.parse(process.env.VCAP_SERVICES);
 	url = vcapServices["mongodb26-swarm"][0].credentials.uri
-} else if (process.env.MONGOLAB_URI) {
-	url = process.env.MONGOLAB_URI;
+} else if (process.env.MONGODB_URI) {
+	url = process.env.MONGODB_URI;
 } else {
 	url = 'mongodb://localhost:27017/checklistomania';
 }

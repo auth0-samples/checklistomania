@@ -29,6 +29,10 @@
       "description": "The authentication callback url",
       "required": true,
       "value": "https://YOUR_APP_URL.herokuapp.com/auth/callback"
+    },
+    "SESSION_SECRET": {
+      "description": "The session secret",
+      "generator": "secret"
     }
   }
 }
