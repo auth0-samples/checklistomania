@@ -49,7 +49,7 @@ Host your own version of the dashbaord on Heroku using the Heroku button.
 
 In order to deploy to Heroku you will need an Auth0 Account.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fauth0%2Fchecklistomania)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fauth0-samples%2Fchecklistomania)
 
 For 18Fers: this is deployed on cloud.gov. Get started on cloud.gov by following the instructions [here](https://docs.cloud.gov/). Ask for more details in #checklistomania channel in slack.
 
