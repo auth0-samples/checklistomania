@@ -1,19 +1,20 @@
 <html lang="en">
-  
+
   <head>
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="css/auth-buttons.css">
   </head>
-  
+
   <body ng-app="publicApp" ng-cloak>
     <div layout="row" layout-align="center">
       <div layout="column">
          <h1>Welcome to Checklistomania!</h1>
-         <a class="btn-auth btn-github large" href="private/index.html">Sign in with <b>GitHub</b></a>
-
+         <div id="root" style="width: 280px; margin: 40px auto; padding: 10px;">
+         </div>
       </div>
     </div>
+
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
@@ -25,6 +26,19 @@
     <script type="text/javascript">
       //angular.module('BlankApp', ['ngMaterial']);
       angular.module('publicApp', ['ngMaterial']);
+    </script>
+    <script src="/env.js"></script>
+    <script src="https://cdn.auth0.com/js/lock-9.0.min.js"></script>
+    <script>
+      var lock = new Auth0Lock(env.AUTH0_CLIENT_ID, env.AUTH0_DOMAIN);
+      lock.show({
+          container: 'root'
+        , callbackURL: env.CALLBACK_URL
+        , responseType: 'code'
+        , authParams: {
+          scope: 'openid email'
+        }
+      });
     </script>
   </body>
 
